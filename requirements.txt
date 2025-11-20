@@ -1,0 +1,24 @@
+# Core dependencies
+# Note: langgraph 1.0+ requires langchain-core 1.0+
+# If you have older langchain packages installed, they may conflict
+langchain-core>=1.0.0,<2.0.0
+langgraph>=1.0.0,<2.0.0
+pydantic>=2.0.0,<3.0.0
+
+# Production dependencies
+python-dotenv>=1.0.0
+typing-extensions>=4.8.0
+requests>=2.31.0
+streamlit>=1.28.0
+
+# Development dependencies (optional)
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Note: If you have conflicting packages installed, you may need to:
+# 1. Create a fresh virtual environment
+# 2. Uninstall conflicting packages: pip uninstall langchain langchain-community langchain-experimental langchain-text-splitters anaconda-cloud-auth
+# 3. Install only the required packages: pip install -r requirements.txt
